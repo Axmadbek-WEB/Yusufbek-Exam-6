@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/Veranix.jpg">
+    <title>KinoNix</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="hero_img" src="./img/Heading 1.png" alt="photo">
+        <div class="ota_search">
+            <input id="qidiruv" type="text" placeholder="Enter your movie name...">
+            <select name="" id="all" class="select">
+                <option value="Crime">Crime</option>
+                <option value="Drama">Drama</option>
+                <option value="Action">Action</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Biography">Biography</option>
+                <option value="History">History</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Western">Western</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Family">Family</option>
+                <option value="War">War</option>
+                <option value="Animation">Animation</option>
+                <option value="Horror">Horror</option>
+                <option value="Music">Music</option>
+                <option value="Musical">Musical</option>
+                <option value="Film-Noir">Film-Noir</option>
+                <option value="Sport">Sport</option>
+            </select>
+            <select name="" id="sort" class="select">
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option value="1-10">1-10</option>
+                <option value="10-1">10-1</option>
+                <option value="1900-1950">1900-1950</option>
+                <option value="1950-2000">1950-2000</option>
+                <option value="2000-2024">2000-2024</option>
+            </select>
+            <button id="Search">Search</button>
+        </div>
+    </div>
+    <main>
+        <section>
+            <div class="container">
+                <div class="ota_movies" id="ota">
+                    <div class="bola_card">
+                        <img class="movie" src="./img/1200x675mf.jpg.png" alt="movie">
+                        <h4>Patton Oswalt: <br>
+                            Annihilation</h4>
+                        <div class="ota_p">
+                            <p>7.4</p>
+                            <p>2017</p>
+                            <p>1 hr 6 min</p>
+                        </div>
+                        <p>Uncategorized</p>
+                        <button><a href="https://www.netflix.com/uz-ru/" target="_blank">More info</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="audio">
+        <audio id="myAudio" src="./vois/vois.mp3" preload="auto"></audio>
+        <button onclick="playAudio()">Musiqa</button>
+        <button onclick="pauseAudio()">Tinchlik</button>
+    </div>
+    <script src="./vois.js"></script>
+    <script>
+        document.addEventListener("scroll", () => {
+            audio.play();
+        });
+    </script>
+    <script type="module" src="./movies.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
